@@ -1,0 +1,22 @@
+.list {
+  padding: 20px 40px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.item {
+  width: calc((100% - 20px * 3) / 4);
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  transition: transform 250ms ease-in-out;
+}
+.item:hover,
+.item:focus {
+  transform: scale(1.03);
+}
